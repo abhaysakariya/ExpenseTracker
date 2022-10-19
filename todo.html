@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+
+  <!-- Bootstrap CSS -->
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <title>Expense Tracker</title>
+</head>
+
+<body class="d-flex flex-column">
+
+   <div class="loader" id="loader"></div>
+    <div class="body">
+
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Expense Tracker</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Expenses<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contribution</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Calculator</a>
+            </li>
+             <li class="nav-item active">
+              <a class="nav-link" href="#">ToDo List</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+<br>
+         <center>
+           Add New Todo
+         </center>
+     <div class="jumbotron border rounded">
+
+       <div class="row">
+       
+       <input type="text" class=" todoinput" placeholder="Enter Todo" id="inputbox" maxlength="24">
+       
+       <button class="btn border border-secondary addtodobtn" id="todoaddbtn" type="button">ADD</button>
+       
+       </div>
+     </div>
+       <center>
+         <div class="row">
+           
+         
+           <p style="margin-left: 8rem;">Your Todo List</p> <button type="button" class="btn btn-dark" id="tododeleteall"  style="margin-left: 2rem;">Delete All</button>
+         </div>
+         </center>
+       <div class="container jumbotron" id="showoutputdiv">
+       
+      
+      <!-- output shows here -->
+         
+         
+       </div>
+       
+     
+
+
+
+
+
+
+
+
+    </div>
+
+    <footer id="footer" class="foot flex-shrink-0 py-4 bg-dark text-white">
+      <div class="container text-center">
+        <small>Created By &copy; Abhay Sakariya <br></small>
+
+
+      </div>
+      <center>
+        <p class="copyright">loading Animation copyright Goes to <a href="https://uxplanet.org/using-loading-animation-on-websites-and-apps-examples-and-snippets-to-use-cab0097be9f1">Alexander Gilmanov</a> <br>
+          Created Using <a href="https://getbootstrap.com">bootstrap</a>
+          <br>
+          Icons From <a href="fonts.google.com/icons">Fonts Google</a>
+        </p>
+      </center>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="todo.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
