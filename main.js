@@ -226,6 +226,7 @@ function showdata() {
     document.getElementById('income').value = '';
     let getincome = localStorage.getItem('income')
     document.getElementById('totalincome').innerText = getincome; 
+    location.reload();
 
   });
 
