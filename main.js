@@ -1,6 +1,5 @@
 showdata();
 
-
 // login btn
 var loginbtn = document.getElementById('loginbtn');
 
@@ -215,31 +214,54 @@ function showdata() {
 
   let totalexpense = document.getElementById('totalexpense');
   totalexpense.innerText = total;
-  
-  localStorage.setItem('expense',total);
+
+  localStorage.setItem('expense', total);
 
   let addincomebtn = document.getElementById('addincome');
-
+  let tinc = 0;
+  let getfromlocal = localStorage.getItem('income');
+  if (getfromlocal == null) {
+    localStorage.setItem('income', 0);
+    return;
+  }
   addincomebtn.addEventListener('click', function() {
     let income = document.getElementById('income').value;
-    localStorage.setItem('income', income);
+
+    tinc = parseInt(income) + parseInt(getfromlocal);
+
+
+    localStorage.setItem('income', tinc);
+    
     document.getElementById('income').value = '';
-    let getincome = localStorage.getItem('income')
-    document.getElementById('totalincome').innerText = getincome; 
+    let getincome = localStorage.getItem('income');
+
+    document.getElementById('totalincome').innerText = getincome;
     location.reload();
 
   });
 
   let getincome = localStorage.getItem('income');
   document.getElementById('totalincome').innerText = getincome;
-  
+
   let localexpense = localStorage.getItem('expense');
   let localincome = localStorage.getItem('income');
-  
+
   let answer = localincome - localexpense;
-  
+
   let savingtable = document.getElementById('savings').innerText = answer;
+
+let newincome = document.getElementById('newincome');
+
+newincome.addEventListener('click',function(){
+  let income = document.getElementById('income').value;
   
+  
+  localStorage.setItem('income',income);
+  location.reload();
+  
+});
+
+
 }
 
 
