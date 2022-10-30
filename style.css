@@ -29,20 +29,22 @@ html,body{
 }
 
 
-#title, #date, #amount, #username ,#password,#signuser,#signpass{
+#title, #date, #amount,#income{
+  margin: .5rem 0;
+  margin-right: 1rem;
+  width: 100%;
+}
+
+#username,#password,#signuser,#signpass{
   margin: .5rem 0;
   margin-right: 1rem;
 }
 
-#title, #amount{
-  min-width: 275px;
-  max-width: 600px;
-}
 
 
 .body{
   background: white; 
-  height: 1000%;
+  height: 100000%;
 }
 
 
@@ -58,8 +60,8 @@ html,body{
 }
 
 .delete{
-  float: right;
-  margin-left: 12rem;
+  margin-left: auto;
+  margin-right: 25px;
   max-height: 38px;
 }
 
@@ -68,8 +70,6 @@ html,body{
 .copyright{
   font-size: 5px;
 }
-
-
 
 
 
@@ -178,3 +178,27 @@ html,body{
   margin-bottom: .5rem;
   height: 38px;
 }
+
+
+table{
+  width: auto;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.block{
+  display: block;
+}
+
+.none{
+  display: none;
+}
+
+/*.nav{
+  position: fixed  !important;
+  top: 0  !important;
+  right: 0  !important;
+  left: 0  !important;
+  z-index: 100  !important;
+} */
+

@@ -320,3 +320,26 @@ deleteall.addEventListener('click', function() {
   }
   showdata();
 });
+
+
+
+$('.newshowincbtn').click(function(){
+ 
+ $('#incomecard').slideToggle(1000);
+  $(this).toggleClass('btn-dark btn-secondary');
+  
+});
+
+$('.newshowexpbtn').click(function(){
+  
+  $(this).toggleClass('btn-dark btn-secondary');
+  
+  $('#expensecard').slideToggle(1000);
+});
+
+
+//let hexcolor = `#${Math.floor(Math.random() * 0xffffff).toString(16)}`;
+
+//console.log(hexcolor);
+
+//document.getElementById('test').style.color = hexcolor;
