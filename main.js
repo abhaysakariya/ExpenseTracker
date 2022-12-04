@@ -311,10 +311,12 @@ search.addEventListener('input', function() {
 let deleteall = document.getElementById('deleteall');
 
 deleteall.addEventListener('click', function() {
-  let confirmation = confirm('Are You sure You want To Delete All Records');
+  let confirmation = confirm('Are You sure You want To Delete All Records including Income Data');
   if (confirmation == true) {
 
     localStorage.removeItem('data');
+    localStorage.removeItem('income');
+    location.reload();
   } else {
     return;
   }
