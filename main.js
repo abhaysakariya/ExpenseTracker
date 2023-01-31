@@ -1,4 +1,5 @@
 showdata();
+localStorage.setItem("logincheck","true");
 
 // login btn
 var loginbtn = document.getElementById('loginbtn');
